@@ -1,4 +1,12 @@
 % 第２章
+\documentclass[11pt, dvipdfmx]{jreport}
+
+\input{../setting}
+
+\begin{document}
+% 分割ファイル，メインファイルから画像フォルダへの相対パスを記述する
+\graphicspath{{../figure/}{./figure/}}
+
 \chapter{hoge}
 \label{chap:hoge}
 
@@ -8,7 +16,7 @@
 
 \begin{figure}[htbp]
   \begin{center}
-    \includegraphics{figure/figure_example.png}
+    \includegraphics{figure_example.png}
     \caption{図}
     \label{fig:figure_example}
   \end{center}
@@ -37,4 +45,4 @@
 
 \section{eee}
 
-
+\end{document}

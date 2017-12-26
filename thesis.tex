@@ -23,26 +23,9 @@
 	\documentclass[11pt, dvipdfmx]{report}
 	\newcommand{\acknowledgmentname}{Acknowledgment}
 \fi
-\usepackage{ascmac}
-\usepackage{graphicx}
-\usepackage{multirow}
-\usepackage{url}
-\usepackage{otf} %髙橋先生の”髙”
-\usepackage[setpagesize=false]{hyperref}
-\usepackage{pxjahyper}
-\usepackage{subcaption}
-\usepackage{ylab_thesis}
 
-\makeatletter
-
-\newcommand\myprintindex{	% 索引を目次に追加
-	\clearpage
-	\phantomsection
-	\addcontentsline{toc}{chapter}{\indexname}
-	\printindex
-}
-
-\makeatother
+\usepackage{docmute}
+\input{setting}
 
 %\bindermode	% バインダ用余白設定
 
@@ -77,6 +60,6 @@
 \input{parts/05}
 
 \input{parts/90_Acknowledgment} % 謝辞
-\input{parts/bibliography.tex}
+\input{parts/bibliography}
 
 \end{document}
